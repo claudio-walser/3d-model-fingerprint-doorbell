@@ -232,49 +232,49 @@ module cableBox() {
 
 module plates() {
 
-	// lower plate
-	color("green") hull() {
-		// top left
-		translate([radius, radius, 0])
-		cylinder(r=radius, h=thickness);
-
-		// top right
-		translate([radius, width - radius, 0])
-		cylinder(r=radius, h=thickness);
-
-
-		// bottom left
-		translate([length - radius, radius, 0])
-		cylinder(r=radius, h=thickness);
-
-		// bottom right
-		translate([length - radius, width - radius, 0])
-		cylinder(r=radius, h=thickness);
-	}
-
-
-	// upper bottom plate
-	color("blue") translate([0, 0, thickness])
-	hull() {
-		// top left
-		translate([radius, radius, 0])
-		cylinder(r=radius, h=thickness);
-
-		// top right
-		translate([radius, width - radius, 0])
-		cylinder(r=radius, h=thickness);
+//	// lower plate
+//	color("green") hull() {
+//		// top left
+//		translate([radius, radius, 0])
+//		cylinder(r=radius, h=thickness);
+//
+//		// top right
+//		translate([radius, width - radius, 0])
+//		cylinder(r=radius, h=thickness);
+//
+//
+//		// bottom left
+//		translate([length - radius, radius, 0])
+//		cylinder(r=radius, h=thickness);
+//
+//		// bottom right
+//		translate([length - radius, width - radius, 0])
+//		cylinder(r=radius, h=thickness);
+//	}
 
 
-		// bottom left
-		translate([upperLength, 0, 0])
-		cube([8, 8, 2]);
-		//#cylinder(r=radius, h=thickness);
-
-		// bottom right
-		translate([upperLength, width - radius * 2, 0])
-		cube([8, 8, 2]);
-		//cylinder(r=radius, h=thickness);
-	}
+//	// upper bottom plate
+//	color("blue") translate([0, 0, thickness])
+//	hull() {
+//		// top left
+//		translate([radius, radius, 0])
+//		cylinder(r=radius, h=thickness);
+//
+//		// top right
+//		translate([radius, width - radius, 0])
+//		cylinder(r=radius, h=thickness);
+//
+//
+//		// bottom left
+//		translate([upperLength, 0, 0])
+//		cube([8, 8, 2]);
+//		//#cylinder(r=radius, h=thickness);
+//
+//		// bottom right
+//		translate([upperLength, width - radius * 2, 0])
+//		cube([8, 8, 2]);
+//		//cylinder(r=radius, h=thickness);
+//	}
 
 
 
@@ -309,7 +309,7 @@ module plates() {
  	}
  	color("red") translate([150, 49, 2])
  	cube([70, 5, 2]);
-
+//
 }
 
 difference() {
@@ -319,4 +319,4 @@ difference() {
 	bellSensor();
 }
 
-cableBox();
+//cableBox();
